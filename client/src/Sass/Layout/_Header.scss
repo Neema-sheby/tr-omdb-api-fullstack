@@ -1,0 +1,60 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-black--light;
+    ;
+    padding: 1rem $p-sides;
+    box-shadow: $box-shadow--btn-blue;
+
+    @include respond(small-tab-portrait) {
+        padding: $p-sides;
+    }
+
+    @include respond(phone) {
+        padding: 1.5rem $p-sides;
+    }
+
+    &__logobox {
+        font-size: 1.2rem;
+        margin: auto 0;
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        font-size: 1.6rem;
+        font-weight: 500;
+
+        @include respond(large-tab) {
+            font-size: 1.4rem;
+        }
+
+        @include respond(small-tab) {
+            font-size: 1.2rem;
+        }
+
+    }
+
+    &__logo-img {
+        background-color: $color-white--light;
+        padding: .5rem;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        margin-left: .5rem;
+        z-index: 1000;
+
+        @include respond(large-tab) {
+            padding: 0.3rem;
+        }
+    }
+}
